@@ -17,7 +17,7 @@ export function NewProject() {
       body: JSON.stringify(project),
     })
       .then((resp) => resp.json())
-      .then((data) => {
+      .then(() => {
         history("/projects", {
           state: { message: "Projeto criado com sucesso!" },
         });
